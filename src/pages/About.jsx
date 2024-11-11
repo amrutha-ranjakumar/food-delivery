@@ -55,10 +55,7 @@ function About() {
           overflowX: 'auto',
           gap: '4rem',
           
-        }}
-
-        
-      >
+        }}>
         {[aboutImage, aboutImage1, aboutImage2, aboutImage3, aboutImage4, aboutImage6, aboutImage7].map((image, index) => (
           <Card key={index} style={{ minWidth: '8rem', flex: '0 0 auto' }} className="shadow-lg border-0 text-center">
             <Card.Img variant="top" src={image}

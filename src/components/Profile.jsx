@@ -30,8 +30,7 @@ function Profile() {
                 <img src={profilePic} alt="Profile Icon" width="40px" className="ms-4" 
                      style={{ cursor: 'pointer', borderRadius: '50%' }} />
             </div>
-
-            <Modal show={show} onHide={handleClose} centered>
+              <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton style={{ background: 'linear-gradient(135deg, #ff9900, #5bc0be)' }}>
                     <Modal.Title style={{ fontSize: '2.1rem', fontWeight: 'bold', color: '#333' }}>Account</Modal.Title>
                 </Modal.Header>
@@ -48,8 +47,7 @@ function Profile() {
                             margin: '0 auto',
                             maxWidth: '450px'
                         }}
-                    >
-                        {[
+                    >     {[
                             { label: 'Orders', icon: 'fa-box', bgColor: '#fff4f4', color: '#ff5722', path: '/myorder' },
                             { label: 'Favorites', icon: 'fa-heart', bgColor: '#f2f5ff', color: '#5a5dff', path: '/wishlist' },
                             { label: 'Addresses', icon: 'fa-location-dot', bgColor: '#e7f5ff', color: '#17a2b8' },

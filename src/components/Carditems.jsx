@@ -23,8 +23,7 @@ function Carditems({ dishname, description, price, dishesImage }) {
 
   return (
     <>
-   
-    <Card className="h-100 border-0 rounded-lg shadow-sm d-flex flex-column">
+   <Card className="h-100 border-0 rounded-lg shadow-sm d-flex flex-column">
       <Card.Img 
         variant="top" 
         src={`${BASE_URL}/uploads/${dishesImage}`} 
@@ -37,7 +36,6 @@ function Carditems({ dishname, description, price, dishesImage }) {
         }}
         className="card-img-top"
       />
-      
       <Card.Body className="p-4 d-flex flex-column justify-content-between">
         <div>
           <Card.Title className="text-dark" style={{ fontSize: '1.5rem', fontWeight: '500' }}>
