@@ -1,0 +1,1 @@
+export const BASE_URL="https://back-food-delivery-2.onrender.com"
