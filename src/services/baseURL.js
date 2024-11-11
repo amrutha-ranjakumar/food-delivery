@@ -1,1 +1,1 @@
-export const BASE_URL="https://back-food-delivery.onrender.com"
+export const BASE_URL="https://back-food-delivery-1.onrender.com"

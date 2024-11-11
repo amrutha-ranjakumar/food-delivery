@@ -25,7 +25,8 @@ function Profile() {
     };
 
     return (
-        <div>
+       
+       <div>
             <div onClick={handleShow}>
                 <img src={profilePic} alt="Profile Icon" width="40px" className="ms-4" 
                      style={{ cursor: 'pointer', borderRadius: '50%' }} />
