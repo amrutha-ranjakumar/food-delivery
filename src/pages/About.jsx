@@ -92,9 +92,7 @@ function About() {
                 </p>
                 <p className="mt-4" style={{ lineHeight: '1.4', color: '#001a4d' }}>
                 Foodie also recognizes the importance of fostering local connections. By partnering with small and independent restaurants, Foodie enables them to expand their customer base and reach diners who may not have discovered their offerings otherwise. This support for local businesses strengthens community bonds and enriches the culinary landscape, making Foodie an invaluable resource for those who enjoy exploring new flavors and supporting neighborhood gems.
-
-
-                </p>
+                 </p>
                 <p className="mt-4" style={{ lineHeight: '1.4', color: '#001a4d' }}>
                 Beyond convenience, Foodie prioritizes safety and reliability, offering secure payment options and real-time tracking so users can monitor their orders from kitchen to doorstep. The platform’s reliable delivery network ensures timely service, while dedicated customer support is readily available to resolve any issues. Whether ordering for a family meal, an office lunch, or a solo night in, Foodie enhances every dining experience by celebrating food’s ability to bring people together. With Foodie, discover a world of flavor right in your neighborhood—one delicious meal at a time.
                 </p>

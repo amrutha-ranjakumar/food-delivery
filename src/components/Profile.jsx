@@ -35,9 +35,7 @@ function Profile() {
                     <Modal.Title style={{ fontSize: '2.1rem', fontWeight: 'bold', color: '#333' }}>Account</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{ textAlign: 'center', backgroundColor: '#f0f2f5', padding: '35px' }}>
-                    <img src={profilePic} alt="Profile" width="80px" className="rounded-circle mb-3" />
-
-                    <div 
+                    <img src={profilePic} alt="Profile" width="80px" className="rounded-circle mb-3" /><div 
                         style={{
                             display: 'grid',
                             gap: '15px',

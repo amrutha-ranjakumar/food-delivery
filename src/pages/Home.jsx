@@ -141,8 +141,7 @@ function Home() {
                       menu={dish.menu}
                       // onClick={() => setSelectedCategory(dish.menu)}
                       style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)', borderRadius: '15px', transition: 'transform 0.3s ease-in-out' }}
-                     
-                    />
+                     />
                   </Col>
                 ))
               ) : (
