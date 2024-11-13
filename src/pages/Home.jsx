@@ -160,7 +160,6 @@ function Home() {
             </div>
           
             <Row>
-              
               <h2 className="text-center mb-2" style={{ color: '#3a506b', fontSize: '2rem' }}>Top Dishes</h2>
               <h1 className="mb-5 text-center" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#5bc0be' }}>
                 Featured Dishes

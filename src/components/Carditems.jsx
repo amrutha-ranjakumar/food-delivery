@@ -71,8 +71,7 @@ function Carditems({ dishname, description, price, dishesImage }) {
           </Button>
 
           <Button 
-           
-            className="p-2 rounded-circle text-success border-2 border-success" 
+           className="p-2 rounded-circle text-success border-2 border-success" 
             onClick={handleIncrement}
             style={{
               transition: 'all 0.3s ease',

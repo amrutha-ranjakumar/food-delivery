@@ -100,8 +100,7 @@ function About() {
                   Order Now
                 </Button>
               </Col>
-
-              {/* About Image Section */}
+           {/* About Image Section */}
               <Col xs={12} md={6}>
                 <img
                   src="https://i.pinimg.com/564x/58/a0/bc/58a0bcd2956e4425d674ca0f20a933c3.jpg"
