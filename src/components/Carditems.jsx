@@ -22,74 +22,47 @@ function Carditems({ dishname, description, price, dishesImage }) {
   };
 
   return (
-    <>
-   <Card className="h-100 border-0 rounded-lg shadow-sm d-flex flex-column">
-      <Card.Img 
-        variant="top" 
-        src={`${BASE_URL}/uploads/${dishesImage}`} 
-        alt={dishname} 
-        style={{ 
-          height: '140px', 
-          objectFit: 'cover', 
-          borderRadius: '8px 8px 0 0', 
-          transition: 'transform 0.3s ease' 
+    <Card className="h-100 border-0 shadow" style={{ overflow: 'hidden', transition: 'transform 0.3s, box-shadow 0.3s' }}>
+      <Card.Img variant="top"src={`${BASE_URL}/uploads/${dishesImage}`} alt={dishname} style={{
+          height: '160px', // Decreased height
+          objectFit: 'cover',
         }}
-        className="card-img-top"
       />
-      <Card.Body className="p-4 d-flex flex-column justify-content-between">
-        <div>
-          <Card.Title className="text-dark" style={{ fontSize: '1.5rem', fontWeight: '500' }}>
-            {dishname}
-          </Card.Title>
-          
-          <Card.Text className="text-muted" style={{ fontSize: '1rem', marginBottom: '1rem', color: '#001a4d' }}>
-            {description}
-          </Card.Text>
+      <Card.Body className="p-3">
+        <Card.Title className="text-center" style={{ fontSize: '1.3rem', fontWeight: '500' }}>
+          {dishname}
+        </Card.Title>
+        <Card.Text className="text-muted text-center" style={{ fontSize: '0.85rem', margin: '0.5rem 0' }}>
+          {description}
+        </Card.Text>
+        <div className="text-center">
+          <span className="text-warning" style={{ fontSize: '1.1rem' }}>★★★★★</span>
+          <div>
 
-          <div className="d-flex justify-content-between align-items-center">
-            <span className="text-warning" style={{ fontSize: '1.2rem' }}>★★★★★</span>
-            <span className="text-primary" style={{ fontSize: '1.4rem', fontWeight: '600' }}>${price}</span>
-          </div>
-        </div>
-
-        <div className="d-flex justify-content-between align-items-center mt-4">
-          <Button 
-         
-            className="p-2 rounded-circle text-danger border-2 border-danger" 
-            onClick={handleIncrement1}
-            style={{
-              transition: 'all 0.3s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'scale(1.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
+            <span className="text-primary" style={{ fontSize: '1.2rem', fontWeight: '600' }}>${price}</span>
+          </div> </div>
+        <div className="d-flex justify-content-between align-items-center mt-2">
+          <Button variant="light" className="ms-2" onClick={handleIncrement1}
+             onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent'; // Revert background on mouse out
+              e.currentTarget.style.color = '#3498db'; // Revert text color on mouse out
+              e.currentTarget.style.transform = 'scale(1)'; // Revert scale effect
             }}
           >
-            <img src={heart} width={'20px'} alt="Add to Wishlist" />
+           <img src={heart} width={'20px'} alt="" />
           </Button>
 
-          <Button 
-           
-            className="p-2 rounded-circle text-success border-2 border-success" 
-            onClick={handleIncrement}
-            style={{
-              transition: 'all 0.3s ease',
+          <Button variant="light" className="ms-2" onClick={handleIncrement}
+             onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent'; // Revert background on mouse out
+              e.currentTarget.style.color = '#3498db'; // Revert text color on mouse out
+              e.currentTarget.style.transform = 'scale(1)'; // Revert scale effect
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'scale(1.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-            }}
-          >
-            <img src={cart} width={'20px'} alt="Add to Cart" />
+          ><img src={cart} width={'20px'} alt="" />
           </Button>
         </div>
       </Card.Body>
     </Card>
-    </>
   );
 }
 
