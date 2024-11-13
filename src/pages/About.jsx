@@ -121,9 +121,7 @@ function About() {
           </Card>
         </Row>
       </Container>
-
-     
-      {/* Favorite Dishes Carousel */}
+     {/* Favorite Dishes Carousel */}
       <h2 className="text-center my-5" style={{ fontSize: '2rem', fontWeight: '700', color: '#5bc0be' }}>Shop Groceries</h2>
       <marquee scrollAmount={5} className="d-flex justify-content-center">
         <div style={{ display: 'flex', gap: '1rem', padding: '1rem', width: '100%', justifyContent: 'center', gap: '5rem' }}>

@@ -125,8 +125,7 @@ function Home() {
             </Container>
           </Container>
 
-
-          {/* Menu Categories */}
+         {/* Menu Categories */}
           <Container className="my-5">
             <Row>
               <h2 className="text-center mb-2" style={{ color: '#3a506b', fontSize: '2rem' }}>Menu Categories</h2>
