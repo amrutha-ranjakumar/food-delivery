@@ -30,12 +30,15 @@ function Profile() {
                 <img src={profilePic} alt="Profile Icon" width="40px" className="ms-4" 
                      style={{ cursor: 'pointer', borderRadius: '50%' }} />
             </div>
-              <Modal show={show} onHide={handleClose} centered>
+
+            <Modal show={show} onHide={handleClose} centered>
                 <Modal.Header closeButton style={{ background: 'linear-gradient(135deg, #ff9900, #5bc0be)' }}>
                     <Modal.Title style={{ fontSize: '2.1rem', fontWeight: 'bold', color: '#333' }}>Account</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{ textAlign: 'center', backgroundColor: '#f0f2f5', padding: '35px' }}>
-                    <img src={profilePic} alt="Profile" width="80px" className="rounded-circle mb-3" /><div 
+                    <img src={profilePic} alt="Profile" width="80px" className="rounded-circle mb-3" />
+
+                    <div 
                         style={{
                             display: 'grid',
                             gap: '15px',
@@ -45,12 +48,13 @@ function Profile() {
                             margin: '0 auto',
                             maxWidth: '450px'
                         }}
-                    >     {[
+                    >
+                        {[
                             { label: 'Orders', icon: 'fa-box', bgColor: '#fff4f4', color: '#ff5722', path: '/myorder' },
                             { label: 'Favorites', icon: 'fa-heart', bgColor: '#f2f5ff', color: '#5a5dff', path: '/wishlist' },
-                            { label: 'Addresses', icon: 'fa-location-dot', bgColor: '#e7f5ff', color: '#17a2b8' },
-                            { label: 'Payments', icon: 'fa-wallet', bgColor: '#fdfdfd', color: '#6c757d' },
-                            { label: 'Support', icon: 'fa-headset', bgColor: '#e5ffe5', color: '#28a745' },
+                            { label: 'Addresses', icon: 'fa-location-dot', bgColor: '#e7f5ff', color: '#17a2b8', path: '/addresses' },
+                            { label: 'Payments', icon: 'fa-wallet', bgColor: '#fdfdfd', color: '#6c757d', path: '/payments' },
+                            { label: 'Support', icon: 'fa-headset', bgColor: '#e5ffe5', color: '#28a745', path: '/support' },
                             { label: 'Logout', icon: 'fa-right-from-bracket', bgColor: '#fff1f1', color: '#e63946', path: '/' },
                         ].map((item, index) => (
                             <div

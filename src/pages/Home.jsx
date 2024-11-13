@@ -52,7 +52,7 @@ function Home() {
 
   // Filter dishes by selected category and search query
   const filteredDishes = alldishmenu.filter((dish) =>
-    (!selectedCategory || dish.category.toLowerCase() === selectedCategory.toLowerCase()) &&
+    (!selectedCategory || dish.category.toLowerCase() === selectedCategory?.toLowerCase()) &&
     dish.dishname.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -125,8 +125,7 @@ function Home() {
             </Container>
           </Container>
 
-
-          {/* Menu Categories */}
+         {/* Menu Categories */}
           <Container className="my-5">
             <Row>
               <h2 className="text-center mb-2" style={{ color: '#3a506b', fontSize: '2rem' }}>Menu Categories</h2>
@@ -139,9 +138,8 @@ function Home() {
                     <Menu
                       menuimage={dish.menuimage}
                       menu={dish.menu}
-                      onClick={() => setSelectedCategory(dish.menu)}
                       style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)', borderRadius: '15px', transition: 'transform 0.3s ease-in-out' }}
-                    />
+                     />
                   </Col>
                 ))
               ) : (
@@ -151,16 +149,18 @@ function Home() {
           </Container>
 
           {/* Dishes Section */}
-          <Container className="my-5">
-            <div className="d-flex justify-content-between">
-              <Button variant="outline-secondary" onClick={handlePreviousPage} disabled={currentPage === 1}>
-                <img src={leftarrows} width={'40px'} alt="" />
+          <Container className="my-5 ">
+            <div className="d-flex justify-content-between ">
+              <Button variant="outline-secondary" onClick={handlePreviousPage} disabled={currentPage === 1} >
+                <img src={leftarrows} width={'30px'} alt="" />
               </Button>
               <Button variant="outline-secondary" onClick={handleNextPage} disabled={currentPage === totalPages}>
-                <img src={rightarrow} width={'40px'} alt="" />
+                <img src={rightarrow} width={'30px'} alt="" />
               </Button>
             </div>
+          
             <Row>
+              
               <h2 className="text-center mb-2" style={{ color: '#3a506b', fontSize: '2rem' }}>Top Dishes</h2>
               <h1 className="mb-5 text-center" style={{ fontSize: '2.5rem', fontWeight: 'bold', color: '#5bc0be' }}>
                 Featured Dishes
