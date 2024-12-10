@@ -92,7 +92,7 @@ function Order() {
     const totalInPaise = Math.round(parseFloat(total) * 100);
 
     var options = {
-      key: "rzp_test_CFQcKDZyBWc5Nn",
+      key: "rzp_test_coDPu7K5RpRMaA",
       amount: totalInPaise,
       currency: "INR",
       name: "Ever Rocking",
